@@ -35,7 +35,7 @@ class HeighlightInfo extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: defaultPadding,
                 ),
                 Row(

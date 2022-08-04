@@ -12,15 +12,15 @@ class Knowleges extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Divider(),
+        const Divider(),
         Padding(
-          padding: EdgeInsets.symmetric(vertical: defaultPadding),
+          padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: Text(
             "Knowledge",
             style: Theme.of(context).textTheme.subtitle2,
           ),
         ),
-        KnowledgeText(
+        const KnowledgeText(
           lable: "Flutter, Dart",
         )
       ],

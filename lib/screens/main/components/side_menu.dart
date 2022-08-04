@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:portfolio/components/animated_lenear_progress_indicator.dart';
 import 'package:portfolio/constants.dart';
 import 'package:portfolio/screens/main/components/area_info_text.dart';
 import 'package:portfolio/screens/main/components/coding.dart';

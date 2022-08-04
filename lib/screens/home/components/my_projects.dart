@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
-import 'package:portfolio/models/Project.dart';
+import 'package:portfolio/models/project.dart';
 import 'package:portfolio/responsive.dart';
 import 'package:portfolio/screens/home/components/project_card.dart';
 
