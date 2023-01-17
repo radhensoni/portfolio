@@ -8,14 +8,17 @@ class KnowledgeText extends StatelessWidget {
   final String lable;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        SvgPicture.asset("assets/icons/check.svg"),
-        const SizedBox(
-          width: defaultPadding / 2,
-        ),
-        Text(lable)
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(bottom: defaultPadding / 2),
+      child: Row(
+        children: [
+          SvgPicture.asset("assets/icons/check.svg"),
+          const SizedBox(
+            width: defaultPadding / 2,
+          ),
+          Text(lable)
+        ],
+      ),
     );
   }
 }

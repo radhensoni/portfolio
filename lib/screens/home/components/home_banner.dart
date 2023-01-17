@@ -22,38 +22,42 @@ class HomeBanner extends StatelessWidget {
           Container(
             color: darkColor.withOpacity(0.66),
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Discover my Amazing\nArt space!",
-                style: Responsive.isDesktop(context)
-                    ? Theme.of(context).textTheme.headline3!.copyWith(
-                        fontWeight: FontWeight.bold, color: Colors.white)
-                    : Theme.of(context).textTheme.headline6!.copyWith(
-                        fontWeight: FontWeight.bold, color: Colors.white),
-              ),
-              if (!Responsive.isMobileLarge(context))
-                const SizedBox(
-                  height: defaultPadding / 2,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Discover my Amazing\nArt space!",
+                  style: Responsive.isDesktop(context)
+                      ? Theme.of(context).textTheme.headline3!.copyWith(
+                          fontWeight: FontWeight.bold, color: Colors.white)
+                      : Theme.of(context).textTheme.headline6!.copyWith(
+                          fontWeight: FontWeight.bold, color: Colors.white),
                 ),
-              const MyBuildAnimatedText(),
-              const SizedBox(
-                height: defaultPadding,
-              ),
-              if (!Responsive.isMobileLarge(context))
-                ElevatedButton(
-                  onPressed: () {},
-                  style: TextButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: defaultPadding * 2,
-                        vertical: defaultPadding),
-                    backgroundColor: primaryColor,
+                if (!Responsive.isMobileLarge(context))
+                  const SizedBox(
+                    height: defaultPadding / 2,
                   ),
-                  child: const Text("EXPLORE NOW",
-                      style: TextStyle(color: darkColor)),
-                )
-            ],
+                const MyBuildAnimatedText(),
+                const SizedBox(
+                  height: defaultPadding,
+                ),
+                if (!Responsive.isMobileLarge(context))
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: TextButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: defaultPadding * 2,
+                          vertical: defaultPadding),
+                      backgroundColor: primaryColor,
+                    ),
+                    child: const Text("EXPLORE NOW",
+                        style: TextStyle(color: darkColor)),
+                  )
+              ],
+            ),
           )
         ],
       ),
